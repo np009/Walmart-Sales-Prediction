@@ -1,6 +1,4 @@
-/* BAN130 - GROUP 1 - PROJECT */
 
-*Milestone 1*;
  
 libname project "/home/u63044868/PROJECT";
 
@@ -10,7 +8,7 @@ PROC IMPORT out=PROJECT.walmart
 			GETNAMES=YES;
 RUN;
 
-*Milestone 2;
+
 data data_cleaning;
 set project.walmart;
 Store_Number = put(Store,2.);
@@ -38,7 +36,7 @@ proc means data = cleaned;
 run;
 
 
-*Milestone 3- Exploratory analysis
+
 
 *1.Create a new variable called “year” to the cleaned dataset by using Year function;
 
@@ -186,16 +184,16 @@ run;
 proc contents data = Cleaned_Walmart;
 run;
 
-* MILESTONE 4;
 
-*Part1 Examing the numeric variable;
+
+*5 Examing the numeric variable;
 
 Title 'Examining numeric variables in the data set';
 PROC MEANS Data=Cleaned_Walmart n nmiss min max mode mean stddev maxdec=3;
 VAR _numeric_;
 RUN;
 
-*Part 2	Identify relationship between Holiday weeks and Sales;
+*6 Identify relationship between Holiday weeks and Sales;
 
 Title 'Examine relationship between Holiday and sales';
 proc ttest data=Cleaned_Walmart ;
@@ -208,7 +206,7 @@ proc sgplot data=Cleaned_Walmart;
    vbar Holiday_Flag / response=Weekly_Sales stat=mean;
 run;
 
-*Part 3	Identify which holiday impact most on Sales;
+*7 Identify which holiday impact most on Sales;
 
 proc sql;
   create table total_sales as
@@ -226,7 +224,7 @@ proc sgplot data=total_sales;
   yaxis label='Total Weekly Sales';
 run;
 
-*Part 4 What factors can impact on sales of a store?;
+*8 What factors can impact on sales of a store?;
 
 /* Create a new dataset that contains only the values of the selected store */
 
