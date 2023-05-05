@@ -1,7 +1,6 @@
 
 ## Walmart sales prediction
-Our analysis of the Walmart dataset using SAS is tailored towards the management, marketing, and sales teams of Walmart, who rely on data-driven decision-making to develop effective sales and marketing strategies. By analyzing factors such as holidays, weather, fuel prices, and unemployment rates, the team can gain a deeper understanding of how these factors impact Walmart's sales.
-As the intended audience may not possess expertise in statistics, it is crucial to present the analysis in a clear and concise manner. The analysis will incorporate tables and charts that will help to illustrate the most important findings, enabling the team to make informed decisions about sales and marketing strategies. This may involve planning promotions, adjusting pricing, or making changes to staffing.
+The analysis of the Walmart dataset using SAS is designed for the management, sales, and marketing teams at Walmart who rely on data-driven insights to develop effective strategies. The analysis will focus on factors such as holidays, weather, fuel prices, and unemployment rates to understand their impact on Walmart's sales. It is important to present the analysis in a clear and concise manner as the intended audience may not have expertise in statistics. Tables and charts will be used to highlight the most significant findings, which will help the team make informed decisions about sales and marketing strategies, including promotions, pricing adjustments, and staffing changes.
 
 ## Table of Contents
 * [Project Motivation](#motivation)
